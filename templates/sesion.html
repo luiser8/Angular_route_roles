@@ -1,0 +1,8 @@
+<form>
+	<input type="text" ng-model="name" name="name" placeholder="Name">
+	<input type="email" ng-model="email" name="email" placeholder="Email">
+	<input type="submit" value="Enviar" ng-click="addName()">
+</form>
+<ul ng-repeat="n in names">
+	<a href="" ng-click="getIds(n.id)">{{n.id}} - {{n.name}}</a>
+</ul>
